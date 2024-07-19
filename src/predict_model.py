@@ -12,6 +12,8 @@ def load_pipeline():
     """
     base_path = os.path.dirname(os.path.abspath(__file__))
     pipeline_path = os.path.join(base_path, 'models', 'preprocessor.joblib')
+    if not os.path.exists(pipeline_path):
+        raise FileNotFoundError(f"Pipeline file not found: {pipeline_path}")
     return joblib.load(pipeline_path)
 
 def load_model():
@@ -25,6 +27,8 @@ def load_model():
     """
     base_path = os.path.dirname(os.path.abspath(__file__))
     model_path = os.path.join(base_path, 'models', 'best_model_v2.joblib')
+    if not os.path.exists(model_path):
+        raise FileNotFoundError(f"Model file not found: {model_path}")
     return joblib.load(model_path)
 
 def load_feature_names():
@@ -38,6 +42,8 @@ def load_feature_names():
     """
     base_path = os.path.dirname(os.path.abspath(__file__))
     feature_names_path = os.path.join(base_path, 'models', 'feature_names.txt')
+    if not os.path.exists(feature_names_path):
+        raise FileNotFoundError(f"Feature names file not found: {feature_names_path}")
     with open(feature_names_path, "r") as f:
         feature_names = f.read().splitlines()
     return feature_names
