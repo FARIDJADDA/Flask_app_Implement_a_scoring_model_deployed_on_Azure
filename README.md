@@ -51,9 +51,7 @@ Ce projet consiste à construire un modèle de scoring prédictif pour estimer l
 PROJET_7
 │
 ├── api
-│ ├── app.py
 │ ├── predict_model.py
-│ ├── requirements.txt
 │ └── test_local_api_v2.ipynb
 │
 ├── data
@@ -69,6 +67,10 @@ PROJET_7
 ├── output
 │
 ├── test
+│
+├── app.py
+│
+├── requirements.txt
 │
 └── .gitignore
 ```
