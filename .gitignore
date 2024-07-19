@@ -1,0 +1,39 @@
+# Environments
+myenv/
+*.venv/
+*.env/
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# Data
+data/raw/
+data/processed/
+output/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MLflow
+mlruns/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Log files
+*.log
+
+# Others
+.env
+livrables/assets
+notebooks/
