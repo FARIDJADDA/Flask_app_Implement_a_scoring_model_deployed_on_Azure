@@ -82,13 +82,13 @@ Folder_project
 
 1. **Cloner le dépôt** :
 ```bash
-   git clone https://github.com/yourusername/Flask_app_Implement_a_scoring_model_deployed_on_Azure.git
+   git clone https://github.com/FARIDJADDA/Flask_app_Implement_a_scoring_model_deployed_on_Azure.git
    cd Flask_app_Implement_a_scoring_model_deployed_on_Azure
 ```
 
 2. **Installer les dépendances :** :
 ```bash
-    pip install -r api/requirements.txt
+    pip install -r requirements.txt
 ```
 
 3. **Configurer MLFlow :** :
