@@ -1,5 +1,7 @@
 # Flask App: Implement a Scoring Model Deployed on Azure
 
+[![ban](https://user.oc-static.com/upload/2023/03/22/16794938722698_Data%20Scientist-P7-01-banner.png)]([https://www.digitalocean.com/products/app-platform](https://openclassrooms.com/))
+
 ## Description
 Ce projet consiste à construire un modèle de scoring prédictif pour estimer la probabilité de faillite d'un client, puis à le déployer dans le cloud. Le projet est réalisé en suivant une approche MLOps de bout en bout, incluant le tracking des expérimentations, l'analyse du data drift en production, et la mise en place d'une API pour interagir avec le modèle.
 
@@ -48,11 +50,11 @@ Ce projet consiste à construire un modèle de scoring prédictif pour estimer l
 ## Structure du Projet
 
 ```
-PROJET_7
+Folder_project
 │
-├── api
-│ ├── predict_model.py
-│ └── test_local_api_v2.ipynb
+├── src
+│ ├── __init__.py
+│ └── predict_model.py
 │
 ├── data
 │ ├── processed
@@ -97,18 +99,17 @@ Suivre les instructions de configuration de MLFlow pour votre environnement.
 1. **Lancer l'API localement :**
 
 ```bash
-    python api/app.py
+    python app.py
 ```
 
 2. **Tester l'API :**
 
-Utiliser le notebook test_local_api_v2.ipynb pour envoyer des requêtes à l'API et vérifier les prédictions.
+Utiliser le notebook test_local_api_v2.ipynb dans le dossier test pour envoyer des requêtes à l'API et vérifier les prédictions.
 
 3. **Déployer l'API dans le cloud :**
 
 Utiliser **GitHub Actions** et une solution cloud comme Azure pour mettre en production l'API.
 Utiliser l'interface de test :
-
 Lancer l'application Streamlit pour interagir avec l'API et tester le scoring client.
 
 # Contribution
